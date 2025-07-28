@@ -1,0 +1,26 @@
+{
+  "name": "forme",
+  "version": "1.0.0",
+  "description": "An app that integrates your calendar to give you 1-3 prompts a day to move you toward a health/wellness goal",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "content"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend && npm run build --workspace=backend",
+    "start": "npm run start --workspace=frontend",
+    "lint": "npm run lint --workspace=frontend && npm run lint --workspace=backend",
+    "test": "npm run test --workspace=frontend && npm run test --workspace=backend"
+  },
+  "keywords": ["wellness", "calendar", "health", "productivity", "mindfulness"],
+  "author": "Forme Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+} 
